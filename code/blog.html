@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Writer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog Writer</h1>
+        </header>
+        <main>
+            <section class="editor-section">
+                <h2>Create a New Post</h2>
+                <textarea id="postTitle" placeholder="Title..."></textarea>
+                <textarea id="postContent" placeholder="Write your blog post here..."></textarea>
+                <button id="savePost">Save Post</button>
+            </section>
+            <section class="posts-section">
+                <h2>Saved Posts</h2>
+                <div id="postsContainer"></div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

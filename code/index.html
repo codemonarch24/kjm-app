@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" height="200px" width="200px"></div>
+        <h1>Train Status Checker</h1>
+    </header>
+    <main>
+        <form id="train-status-form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Check Train Status</h2>
+            <input type="text" id="train-number" aria-label="Train number" placeholder="Enter train number" required>
+            <button type="submit">Check Status</button>
+            <div id="loading-spinner" class="hidden">Loading...</div>
+        </form>
+        <div id="train-status-result" aria-live="polite"></div>
+        <ul id="trains"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

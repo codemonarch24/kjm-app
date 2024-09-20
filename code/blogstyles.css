@@ -1,0 +1,125 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e3d9f3, #f5e1f2); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #6f42c1; /* Dark purple */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header:hover {
+    background-color: #5a34a3; /* Darker purple */
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+main {
+    margin-top: 20px;
+}
+
+.editor-section, .posts-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.editor-section:hover, .posts-section:hover {
+    background-color: #fafafa; /* Light background on hover */
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #9b5de5; /* Purple border on focus */
+    box-shadow: 0 0 8px rgba(155, 93, 229, 0.5); /* Subtle shadow */
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #9b5de5; /* Purple */
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #7f3fbf; /* Slightly darker purple */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.post {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post:hover {
+    background: #f0f0f0;
+    transform: scale(1.01); /* Slight scale effect */
+}
+
+.post h3 {
+    margin: 0;
+    color: #6f42c1; /* Dark purple */
+}
+
+.post p {
+    margin: 10px 0 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

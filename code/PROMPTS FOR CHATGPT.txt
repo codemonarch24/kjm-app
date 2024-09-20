@@ -1,0 +1,35 @@
+PROMPTS FOR CHATGPT:
+
+
+Hey! Chat GPT could you help me in coding an app since you are fluent in all coding languages and
+posses large amount of data, use the content i give to create and update the app. thank you
+
+
+STEP 2: I shall provide the content and details of the app, make sure the website has multiple pages and a responsive and transitive design,
+        add enchancements and updates as need.
+
+
+
+
+design:
+
+
+
+
+purpose of the app : 
+
+
+
+
+
+features: 
+
+
+
+
+
+
+
+languages used:  
+ 
+

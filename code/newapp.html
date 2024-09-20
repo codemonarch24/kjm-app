@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways Train Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Railways Train Booking</h1>
+        
+        <form id="booking-form">
+            <label for="source">Source Station:</label>
+            <input type="text" id="source" name="source" required>
+            
+            <label for="destination">Destination Station:</label>
+            <input type="text" id="destination" name="destination" required>
+            
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Search Trains</button>
+        </form>
+        
+        <div id="train-list" class="hidden">
+            <h2>Available Trains</h2>
+            <ul id="trains"></ul>
+        </div>
+        
+        <div id="booking-confirmation" class="hidden">
+            <h2>Booking Confirmation</h2>
+            <p id="confirmation-message"></p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
